@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@tailwind components;
+@tailwind utilities;
+
+@theme {
+    --color-primary: #F89739;
+}
+
+@layer utilities {
+    
+}

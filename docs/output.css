@@ -1404,6 +1404,24 @@
     --tw-gradient-from: var(--color-white);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .from-75\% {
+    --tw-gradient-from-position: 75%;
+  }
+  .from-80\% {
+    --tw-gradient-from-position: 80%;
+  }
+  .from-81\% {
+    --tw-gradient-from-position: 81%;
+  }
+  .from-82\% {
+    --tw-gradient-from-position: 82%;
+  }
+  .from-83\% {
+    --tw-gradient-from-position: 83%;
+  }
+  .from-85\% {
+    --tw-gradient-from-position: 85%;
+  }
   .from-95\% {
     --tw-gradient-from-position: 95%;
   }
@@ -2696,6 +2714,11 @@
   .lg\:justify-between {
     @media (width >= 64rem) {
       justify-content: space-between;
+    }
+  }
+  .lg\:justify-center {
+    @media (width >= 64rem) {
+      justify-content: center;
     }
   }
   .lg\:justify-start {

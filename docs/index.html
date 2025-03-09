@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <title>Mortgage Reducing Planning</title>
+    <link rel="manifest" href="/manifest.json">
+    <title>FIS Mortgage Ease</title>
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <!-- https://wa.me/60189048651 -->
 </head>
-<body>
-    <nav class="bg-white shadow-sm">
+<body class="bg-gray-100">
+    <nav class="bg-gray-100 shadow-sm">
         <!-- nav responsive function -->
         <script>
             document.addEventListener('DOMContentLoaded', function() {
@@ -30,15 +32,16 @@
                 <div class="flex">
                     <!-- Logo -->
                     <div class="flex-shrink-0 flex items-center space-x-2">
-                        <div>
-                            <img src="https://placehold.co/30x30" alt="logo image" class="">
+                        <div class="w-8 h-8">
+                            <img src="assests/img/logo.png" alt="logo image" class="w-8 h-8">
                         </div>
-                        <span class="text-2xl font-bold text-primary">Title</span>
+                        <span class="text-2xl font-bold text-primary">FIS</span>
+                        <span class="text-2xl font-bold text-black">Mortgage Ease</span>
                     </div>
                     <!-- hidden sm:ml-6 sm:flex sm:space-x-8 -->
                 </div>
                 <!-- link & button -->
-                <div class="hidden sm:ml-6 sm:flex space-x-8 ">
+                <div class="hidden sm:ml-6 lg:flex space-x-8 "> <!-- change xx:flex depends on links quantity/length-->
                     <!-- Desktop Navigation Links -->
                     <div class="flex  justify-between space-x-8">
                         <a href="#offers" class="border-transparent text-gray-500 hover:border-primary hover:text-primary inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
@@ -56,13 +59,16 @@
                     </div>
                     <!-- nav button -->
                     <div class="flex items-center">
-                        <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg  shadow-sm text-white bg-primary hover:bg-black cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
-                            Contact Us
-                        </button>
+                        <a href="https://wa.me/60189048651" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg  shadow-sm text-white bg-primary hover:bg-black cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                            Hubungi Kami
+                        </a>
+                        <!-- <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg  shadow-sm text-white bg-primary hover:bg-black cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                            Hubungi Kami
+                        </button> -->
                     </div>
                 </div>
                 <!-- mobile responsive switcher -->
-                <div class="flex items-center sm:hidden"><!-- change xx:hidden depends on links quantity/length-->
+                <div class="flex items-center lg:hidden"><!-- change xx:hidden depends on links quantity/length-->
                     <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
                         <!-- Icon when menu is closed -->
@@ -74,7 +80,7 @@
             </div>
         </div>
         <!-- mobile nav -->
-        <div class="sm:hidden hidden" id="mobile-menu">
+        <div class="lg:hidden hidden" id="mobile-menu">
             <div class="pt-2 pb-3 space-y-1">
                 <a href="#offers" class="border-transparent text-gray-500 hover:bg-orange-50 hover:border-primary hover:text-primary block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
                     Offers
@@ -93,22 +99,22 @@
                 </a> -->
             </div>
             <div class="pt-4 pb-3 border-t border-gray-200 p-4">
-                <a href="#" class="block px-4 py-2 text-center text-sm font-medium text-white bg-primary rounded-md hover:bg-black focus:ring-2 focus:ring-offset-2 focus:ring-primary mx-4">
-                    Contact Us
+                <a href="https://wa.me/60189048651" class="block px-4 py-2 text-center text-sm font-medium text-white bg-primary rounded-md hover:bg-black focus:ring-2 focus:ring-offset-2 focus:ring-primary mx-4">
+                    Hubungi Kami
                 </a>
             </div>
         </div>
     </nav>
 
     <!-- hero container -->
-    <div id="hero" class="relative max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="bg-white">
-            <div class=" bg-gradient-to-r from-white from-82% to-transparent relative z-10 lg:max-w-2xl">
+    <div id="hero" class="bg-gray-100 relative max-w-7xl mx-auto px-4 sm:px-6">
+        <div class="bg-gray-100">
+            <div class=" bg-gradient-to-r from-gray-100 from-82% to-transparent relative z-10 lg:max-w-2xl">
                 <div class="mt-4 sm:text-center lg:text-left">  <!--spaces between this 2 container-->
                     <div class="flex items-center mr-8">
-                        <div class="bg-primary p-1  px-4 rounded-r-full">
+                        <div class="bg-primary p-1  px-4 rounded-r-full mt-6">
                             <h2 class="text-2xl font-bold text-white italic">
-                                FIS Service
+                                Bayar Tepat, Habis Cepat
                             </h2>
                         </div>
                     </div>
@@ -123,18 +129,21 @@
                     </div> -->
                     <div class="lg:max-w-full sm:max-w-xl sm:mx-auto mt-5   pr-0 lg:mr-32">
                         <span class="taxe-base sm:text-lg md:text-xl text-gray-500">
-                            Anda akan jimat, 10 tahun, 15 tahun, 23 tahun, malah duit anda berpuluh dan beratus ribu dijimatkan!
+                            <!-- Anda akan jimat, 10 tahun, 15 tahun, 23 tahun, malah duit anda berpuluh dan beratus ribu dijimatkan! -->
+                            Anda akan berjimat selama 10 tahun, 15 tahun, 23 tahun malah, Pinjaman Bank anda boleh dijimatkan sehingga berpuluh atau beratus ribu ringgit!
                         </span>
                     </div>
                     <!-- <p class="mt-3 text-base text-gray-500 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"">
                         discription : Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p> -->
                     <!-- button -->
-                    <div class="flex sm:justify-center lg:justify-start mt-8 rounded-lg mb-3">
-                        <button type="button" class=" flex items-center justify-center py-3 px-8 text-lg border font-medium text-white bg-primary hover:bg-black cursor-pointer rounded-lg  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
-                            Contact Us
-                        </button>
-                        
+                    <div class="flex sm:justify-center lg:justify-start mt-8 rounded-lg mb-4">
+                        <a href="https://wa.me/60189048651" class=" flex items-center justify-center py-3 px-8 text-lg border font-medium text-white bg-primary hover:bg-black cursor-pointer rounded-lg  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                            Hubungi Kami
+                        </a>
+                        <!-- <button type="button" class=" flex items-center justify-center py-3 px-8 text-lg border font-medium text-white bg-primary hover:bg-black cursor-pointer rounded-lg  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                            Hubungi Kami
+                        </button> -->
                         <!-- <div class="flex items-center justify-center py-4 text-lg px-10 border font-medium text-white bg-primary hover:bg-black cursor-pointer rounded-lg focus:ring-2 focus:ring-offset-2 focus:ring-primary">
                             button
                         </div> -->
@@ -154,7 +163,7 @@
     </div>
 
     <!-- offers section -->
-    <div id="offers" class="bg-white">
+    <div id="offers" class="bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
             <!-- section title -->
             <div class="md:text-center ">
@@ -175,7 +184,6 @@
                     <span>
                         perkara di bawah dengan mendaftarkan diri anda untuk consultasi percuma bersama kami
                     </span>
-
                 </p>
             </div>
             <!-- point-point -->
@@ -250,10 +258,10 @@
     </div>
 
     <!-- fis advantage section -->
-    <div id="advantage" class="bg-gray-100">
+    <div id="advantage" class="bg-gray-200">
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16">
             <!-- section title -->
-            <div class="flex justify-center mb-8 lg:pb-10">
+            <div class="flex justify-center mb-10">
                 <div class="bg-primary p-2 px-4 rounded-full flex justify-center">
                     <h2 class="text-1xl md:text-2xl font-bold text-white italic">
                         Kelebihan FIS
@@ -311,10 +319,10 @@
                         </li>
                     </ul>
                     <div class="mt-">
-                        <p class="text-center text-xl font-bold italic my-8">
+                        <p class="text-center text-xl font-bold italic mt-8 mb-2">
                             Nikmati kepuasan pemotongan principal (Pokok) loan rumah anda seawal bulan pertama subscript FIS
                         </p>
-                        <p>
+                        <p class="text-center">
                             <!-- Memendekkan tempoh dan Mengurangkan interest bank ke atas jumlah amount Financing mortgage anda sehingga 75%. -->
                             Sistem FIS membantu menghabiskan bayaran loan rumah anda dengan lebih cepat.
                         </p>
@@ -325,7 +333,7 @@
     </div>
 
     <!-- type of banks -->
-    <div id="bank-support" class="bg-white">
+    <div id="bank-support" class="bg-gray-100">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
             <div class="lg:text-center mb-10">
                 <div class="flex justify-center mb-6">
@@ -382,11 +390,10 @@
         </div>
     </div>
     
-
     <!-- trainer -->
-    <div id="trainer" class="bg-gray-100">
+    <div id="trainer" class="bg-gray-200">
         <div class="max-w-7xl mx-auto py-6 lg:py-8 px-4 sm:px-6 ">
-            <div class="bg-white  px-8 sm:px-12 py-6 lg:py-8 rounded-2xl shadow-sm">
+            <div class="bg-gray-100  px-8 sm:px-12 py-6 lg:py-8 rounded-2xl shadow-sm">
                 <!-- section title -->
                 <div class="flex justify-center items-center pb-10 lg:pb-4">
                     <div class="bg-primary p-2 px-4 rounded-full flex justify-center">
@@ -397,7 +404,7 @@
                 </div>
                 <div class="max-w-6xl mx-auto md:flex items-center justify-center">
                     <!-- Trainer details -->
-                    <div class="w-full md:w-2/3 mx-0 lg:ml-8    ">
+                    <div class="w-full md:w-2/3 mx-0 lg:mr-16">
                         <h2 class="text-3xl font-bold text-gray-800 mb-1">Muhammad Faris Bin Shamsul Bahri</h2>
                         <p class="text-xl text-gray-600 mb-6">Director, TasMRPC</p>
                         <!-- Bio -->
@@ -414,13 +421,51 @@
                                 <span class="px-3 py-1 bg-orange-100 text-gray-800 rounded-full text-sm">Degree Yarmouk, Jordan</span>
                             </div>
                         </div>
-                        
                     </div>
                     
                     <!-- img -->
-                    <div class="md:w-1/2 pr-0 md:pr-8 flex items-center justify-center">
+                    <div class="pr-0 md:pr-8 flex items-center justify-center">
                         <!-- md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 -->
                         <img src="assests/img/trainer-img-r.png" alt="fisadvantageimage" class="h-96 object-contain">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- commenter -->
+    <div class="bg-gray-100">
+        <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:py-8 overflow-x-visible">
+            <div class="overflow-hidden relative lg:overflow-x-hidden overflow-x-visible">
+                <div class="relative flex">
+                    <div class="flex min-w-[200vw] sm:min-w-[200%] animate-slide my-4 lg:my-8 ">
+                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <!-- duplicate img for long loop -->
+                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <!-- duplicate img for long loop -->
+                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <!-- duplicate img for long loop -->
+                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
                     </div>
                 </div>
             </div>
@@ -439,16 +484,16 @@
                 </span>
             </h2>
             <div class="flex sm:justify-start lg:justify-start  lg:flex-shrink-0 mt-8 rounded-lg mb-3">
-                <button type="button" class=" flex items-center justify-center py-3 px-8 text-lg border font-medium text-white bg-primary hover:bg-black cursor-pointer rounded-lg  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
-                    <a href="">
-                        CONTACT US
-                    </a>
-                </button>
-                <div class="ml-3 inline-flex rounded-md shadow">
-                    <a href="" class="inline-flex items-center justify-center py-3 px-8 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-white">
-                        CONTACT US
+                <div>
+                    <a href="https://wa.me/60189048651" class=" flex items-center justify-center py-3 px-8 text-lg border font-medium text-white bg-primary hover:bg-black cursor-pointer rounded-lg  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                        Hubungi Kami
                     </a>
                 </div>
+                <!-- <div class="ml-3 inline-flex rounded-md shadow">
+                    <a href="https://wa.me/60189048651" class="inline-flex items-center justify-center py-3 px-8 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-white">
+                        Hubungi Kami
+                    </a>
+                </div> -->
                 <!-- <div class="flex items-center justify-center py-4 text-lg px-10 border font-medium text-white bg-primary hover:bg-black cursor-pointer rounded-lg focus:ring-2 focus:ring-offset-2 focus:ring-primary">
                     button
                 </div> -->
@@ -463,10 +508,10 @@
                 <div class="space-y-8 xl:col-span-1 pr-4 lg:pr-0">
                     <div class="  text-2xl font-bold text-white flex items-center">
                         <span class="text-primary">
-                            Page
+                            FIS
                         </span>
                         <span class="text-white">
-                            Title
+                            Mortgage Ease
                         </span>
                     </div>
                     <p class="text-gray-300 text-base lg:pr-2">
@@ -498,13 +543,13 @@
                             </h3>
                             <ul class="mt-4 space-y-4"">
                                 <li>
-                                    <a href="" class="text-base text-gray-400 hover:text-white">
-                                        No Tel
+                                    <a href="https://wa.me/60189048651" class="text-base text-gray-400 hover:text-white">
+                                        018-9048651
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="text-base text-gray-400 hover:text-white">
-                                        Email
+                                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=tasmrpc@gmail.com" class="text-base text-gray-400 hover:text-white">
+                                        tasmrpc@gmail.com
                                     </a>
                                 </li>
                             </ul>
@@ -519,5 +564,19 @@
             </div>
         </div>
     </footer>
+    <!-- PWAs function -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(registration => {
+                    console.log('ServiceWorker registered with scope:', registration.scope);
+                })
+                .catch(error => {
+                    console.error('ServiceWorker registration failed:', error);
+                });
+            });
+        }
+    </script>
 </body>
 </html>

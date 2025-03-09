@@ -1,19 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary: #F89739;
-
+    --color-primary: #FF6900;
+    --animate-slide: slide 100s linear infinite;
+    @keyframes slide {
+        from {
+        transform: translateX(0);
+        }
+        to {
+        transform: translateX(-500%);
+        }
+    }
 }
 
 @base {
 
-}
+}                   
 
 @components {
 
 }
 
-@utilities {
+@utilities {    
     .h-32 {
         height: calc(var(--spacing) * 32);
     }

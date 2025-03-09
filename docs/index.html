@@ -1,13 +1,13 @@
 <!doctype html>
-<html class="">
+<html class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
     <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" href="assests/favicon.png">
     <title>FIS Mortgage Ease</title>
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
-    <!-- https://wa.me/60189048651 -->
 </head>
 <body class="bg-gray-100">
     <nav class="bg-gray-100 shadow-sm">
@@ -32,8 +32,8 @@
                 <div class="flex">
                     <!-- Logo -->
                     <div class="flex-shrink-0 flex items-center space-x-2">
-                        <div class="w-8 h-8">
-                            <img src="assests/img/logo.png" alt="logo image" class="w-8 h-8">
+                        <div class="h-8 mr-4 ml-2">
+                            <img src="assests/img/logo2.png" alt="logo image" class="h-8">
                         </div>
                         <span class="text-2xl font-bold text-primary">FIS</span>
                         <span class="text-2xl font-bold text-black">Mortgage Ease</span>
@@ -56,6 +56,9 @@
                         <a href="#trainer" class="border-transparent text-gray-500 hover:border-primary hover:text-primary inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                             Trainer
                         </a>
+                        <a href="#testimoni" class="border-transparent text-gray-500 hover:border-primary hover:text-primary inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                            Testimoni
+                        </a>
                     </div>
                     <!-- nav button -->
                     <div class="flex items-center">
@@ -71,9 +74,13 @@
                 <div class="flex items-center lg:hidden"><!-- change xx:hidden depends on links quantity/length-->
                     <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary" aria-controls="mobile-menu" aria-expanded="false">
                         <span class="sr-only">Open main menu</span>
-                        <!-- Icon when menu is closed -->
-                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                        <!-- Icon when menu is closed 1 -->
+                        <!-- <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg> -->
+                        <!-- Icon when menu is closed 2-->
+                        <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
                         </svg>
                     </button>
                 </div>
@@ -94,6 +101,9 @@
                 <a href="#trainer" class="border-transparent text-gray-500 hover:bg-orange-50 hover:border-primary hover:text-primary block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
                     Trainer
                 </a>
+                <a href="#testimoni" class="border-transparent text-gray-500 hover:bg-orange-50 hover:border-primary hover:text-primary block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
+                    Testimoni
+                </a>
                 <!-- <a href="#" class="border-transparent text-gray-500 hover:bg-orange-50 hover:border-primary hover:text-primary block pl-3 pr-4 py-2 border-l-4 text-base font-medium">
                     scroll link
                 </a> -->
@@ -113,7 +123,7 @@
                 <div class="mt-4 sm:text-center lg:text-left">  <!--spaces between this 2 container-->
                     <div class="flex items-center mr-8">
                         <div class="bg-primary p-1  px-4 rounded-r-full mt-6">
-                            <h2 class="text-2xl font-bold text-white italic">
+                            <h2 class="text-base md:text-2xl font-bold text-white italic">
                                 Bayar Tepat, Habis Cepat
                             </h2>
                         </div>
@@ -157,7 +167,7 @@
         </div> -->
         <!-- hero img option 2 -->
         <div class="lg:absolute lg:inset-y-1 lg:right-6 lg:w-2/3">
-            <img class="h-55 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-2xl " src="assests/img/hero-img-rev2.png" alt="" />
+            <img class="h-55 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl lg:rounded-2xl " src="assests/img/hero-img-rev2.png" alt="" />
             <!-- House with money stack -->
         </div>
     </div>
@@ -273,7 +283,7 @@
                 <!-- img -->
                 <div class="md:w-1/2 pr-0 md:pr-8 ">
                     <!-- md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 -->
-                    <img src="assests/img/kelebihan-fis-img.jpg" alt="fisadvantageimage" class="object-cover w-full h-56 sm:h-72  md:h-full rounded-lg shadow-lg ">
+                    <img src="assests/img/kelebihan-fis-img.jpg" alt="fisadvantageimage" class="object-cover w-full h-56 sm:h-72  md:h-full rounded-lg shadow-lg">
                 </div>
                 <!-- list -->
                 <div class="md:w-1/2 mt-8 md:mt-0">
@@ -346,7 +356,7 @@
                 </p> -->
             </div>
             <div class="mx-8 lg:mx-16">
-                <div class="grid grid-cols-3 md:grid-cols-6 gap-y-4 lg:gap mb-6">
+                <div class="grid grid-cols-3 md:grid-cols-6 gap-y-4 lg:gap mb-2 md:mb-6">
                         <div class="flex items-center justify-center ">
                             <img src="assests/img/banks/uob-logo.png" alt="UOB" class="rounded-lg shadow-lg h-[64px] w-[64px]">
                         </div>
@@ -366,25 +376,26 @@
                         <img src="assests/img/banks/ocbc-logo.png" alt="OCBC" class="shadow-lg rounded-lg h-[64px] w-[64px]">
                     </div>
                 </div>
-                <div class="grid grid-cols-3 md:grid-cols-6">
-                    <div class="flex items-center justify-center ">
-                        <img src="assests/img/banks/citybank-logo.png" alt="Citibank" class=" transition duration-300 h-[64px] w-32 object-cover">
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
+                    <div class="flex items-center justify-center mt-2 lg:mt-0">
+                        <img src="assests/img/banks/citybank-logo.png" alt="Citibank" class="rounded-lg shadow-md transition duration-300 h-[64px] w-32 object-cover">
                     </div>
-                    <div class="flex items-center justify-center" >
-                        <img src="assests/img/banks/hong-leong-bank-logo.png" alt="Hong Leong Bank" class=" transition duration-300 h-[64px] w-32 object-cover">
+                    <div class="flex items-center justify-center mt-2" >
+                        <img src="assests/img/banks/hong-leong-bank-logo.png" alt="Hong Leong Bank" class="rounded-lg shadow-md  transition duration-300 h-[64px] w-32 object-cover">
                     </div>
-                    <div class="flex items-center justify-center ">
-                        <img src="assests/img/banks/hsbc-logo.png" alt="HSBC" class=" transition duration-300 h-[64px] w-32 object-cover">
+                    <div class="flex items-center justify-center mt-2"">
+                        <img src="assests/img/banks/hsbc-logo.png" alt="HSBC" class="rounded-lg shadow-md transition duration-300 h-[64px] w-32 object-cover">
                     </div>
-                    <div class="flex items-center justify-center ">
-                        <img src="assests/img/banks/public-bank.png" alt="Public Bank" class=" transition duration-300 h-[64px] w-32 object-cover">
+                    <div class="flex items-center justify-center mt-2"">
+                        <img src="assests/img/banks/public-bank.png" alt="Public Bank" class="rounded-lg shadow-md  transition duration-300 h-[64px] w-32 object-cover">
                     </div>
-                    <div class="flex items-center justify-center ">
-                        <img src="assests/img/banks/rhb-logo.png" alt="RHB" class=" transition duration-300 h-[64px] w-32 object-cover">
+                    <div class="flex items-center justify-center mt-2"">
+                        <img src="assests/img/banks/rhb-logo.png" alt="RHB" class="rounded-lg shadow-md  transition duration-300 h-[64px] w-32 object-cover">
                     </div>
-                    <div class="flex items-center justify-center ">
-                        <img src="assests/img/banks/standard-chartered.png" alt="Standard Chartered" class="transition duration-300 h-[64px] w-32 object-cover">
+                    <div class="flex items-center justify-center mt-2">
+                        <img src="assests/img/banks/standard-chartered.png" alt="Standard Chartered" class="rounded-lg shadow-md  transition duration-300 h-[64px] w-32 object-cover">
                     </div>
+
                 </div>
             </div>
         </div>
@@ -393,7 +404,7 @@
     <!-- trainer -->
     <div id="trainer" class="bg-gray-200">
         <div class="max-w-7xl mx-auto py-6 lg:py-8 px-4 sm:px-6 ">
-            <div class="bg-gray-100  px-8 sm:px-12 py-6 lg:py-8 rounded-2xl shadow-sm">
+            <div class="bg-gray-100  px-8 sm:px-12 py-6 lg:py-8 rounded-2xl shadow-lg">
                 <!-- section title -->
                 <div class="flex justify-center items-center pb-10 lg:pb-4">
                     <div class="bg-primary p-2 px-4 rounded-full flex justify-center">
@@ -406,14 +417,20 @@
                     <!-- Trainer details -->
                     <div class="w-full md:w-2/3 mx-0 lg:mr-16">
                         <h2 class="text-3xl font-bold text-gray-800 mb-1">Muhammad Faris Bin Shamsul Bahri</h2>
-                        <p class="text-xl text-gray-600 mb-6">Director, TasMRPC</p>
+                        <p class="text-xl text-gray-600 mb-6">Pengarah, TasMRPC</p>
                         <!-- Bio -->
                         <div class="mb-6">
                             <p class="text-gray-700 leading-relaxed">
-                                Muhammad Faris Bin Shamsul Bahri, TasMRPC Director, is an experienced financial consultant in mortgage consulting and Islamic finance. A Licensed Financial Planner and PhD Candidate in Islamic Finance at UTM, he has helped numerous clients make well-informed decisions in home financing through tailored solutions that fulfill both financial goals and moral values. With a strong academic background from IIUM and Yarmouk University, he is dedicated to providing personalized financial services that help individuals and families attain safe homeownership.                        </div>
+                                <!-- Muhammad Faris Bin Shamsul Bahri, TasMRPC Director, is an experienced financial consultant in mortgage consulting and Islamic finance. A Licensed Financial Planner and PhD Candidate in Islamic Finance at UTM, he has helped numerous clients make well-informed decisions in home financing through tailored solutions that fulfill both financial goals and moral values. With a strong academic background from IIUM and Yarmouk University, he is dedicated to providing personalized financial services that help individuals and families attain safe homeownership. -->
+                                Muhammad Faris Bin Shamsul Bahri, Pengarah TasMRPC, adalah perunding kewangan berpengalaman dalam perundingan gadai janji dan kewangan Islam. Seorang Perancang Kewangan Berlesen dan Calon PhD dalam Kewangan Islam di UTM, beliau telah membantu ramai pelanggan membuat keputusan termaklum dalam pembiayaan rumah melalui penyelesaian yang disesuaikan yang memenuhi kedua-dua matlamat kewangan dan nilai moral. Dengan latar belakang akademik yang kukuh dari UIAM dan Universiti Yarmouk, beliau berdedikasi untuk menyediakan perkhidmatan kewangan peribadi yang membantu individu dan keluarga mencapai pemilikan rumah yang selamat.
+                            </p>
+                        </div>
                         <!-- Certifications -->
                         <div class="mb-6">
-                            <h3 class="text-xl font-semibold text-gray-700 mb-2">Education & Certifications</h3>
+                            <h3 class="text-xl font-semibold text-gray-700 mb-2">
+                                <!-- Education & Certifications -->
+                                Pendidikan & Pensijilan
+                            </h3>
                             <div class="flex flex-wrap gap-2">
                                 <span class="px-3 py-1 bg-orange-100 text-gray-800 rounded-full text-sm">License Financial Planner (Profesional Cert)</span>
                                 <span class="px-3 py-1 bg-orange-100 text-gray-800 rounded-full text-sm">Phd Cand. Islamic Finance, UTM</span>
@@ -434,38 +451,60 @@
     </div>
 
     <!-- commenter -->
-    <div class="bg-gray-100">
+    <div id="testimoni" class="bg-gray-100">
         <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:py-8 overflow-x-visible">
+            <!-- section title -->
+            <div class="flex justify-center items-center pb-10 lg:pb-4">
+                <div class="bg-primary p-2 px-4 rounded-full flex justify-center">
+                    <h2 class="text-1xl md:text-2xl font-bold text-white italic">
+                        Testimoni
+                    </h2>
+                </div>
+            </div>
             <div class="overflow-hidden relative lg:overflow-x-hidden overflow-x-visible">
                 <div class="relative flex">
                     <div class="flex min-w-[200vw] sm:min-w-[200%] animate-slide my-4 lg:my-8 ">
-                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 2" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 3" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 4" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 5" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 6" class="h-56 rounded-lg shadow-md mx-2">
                         <!-- duplicate img for long loop -->
-                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 2" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 3" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 4" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 5" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 6" class="h-56 rounded-lg shadow-md mx-2">
                         <!-- duplicate img for long loop -->
-                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 2" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 3" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 4" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 5" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 6" class="h-56 rounded-lg shadow-md mx-2">
                         <!-- duplicate img for long loop -->
-                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
-                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 1" class="h-56 rounded-lg shadow-lg mx-2">
+                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 2" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 3" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 4" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 5" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 6" class="h-56 rounded-lg shadow-md mx-2">
+                        <!-- duplicate img for long loop -->
+                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 2" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 3" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 4" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 5" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 6" class="h-56 rounded-lg shadow-md mx-2">
+                        <!-- duplicate img for long loop -->
+                        <img src="assests/img/commenters/commenter1.png" alt="Commenter 1" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter2.png" alt="Commenter 2" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter3.png" alt="Commenter 3" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter4.png" alt="Commenter 4" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter5.png" alt="Commenter 5" class="h-56 rounded-lg shadow-md mx-2">
+                        <img src="assests/img/commenters/commenter6.png" alt="Commenter 6" class="h-56 rounded-lg shadow-md mx-2">
                     </div>
                 </div>
             </div>
@@ -501,12 +540,12 @@
         </div>
     </div>
 
-    <footer class="bg-gray-800">
+    <footer class="bg-neutral-800">
         <!-- px-4 sm:px-6 -->
         <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16">
             <div class="xl:grid xl:grid-cols-3 xl:gap-8">  
                 <div class="space-y-8 xl:col-span-1 pr-4 lg:pr-0">
-                    <div class="  text-2xl font-bold text-white flex items-center">
+                    <div class="space-x-2  text-2xl font-bold text-white flex items-center">
                         <span class="text-primary">
                             FIS
                         </span>
@@ -559,11 +598,12 @@
             </div>
             <div class="mt-12 text-base text-gray-400 border-t border-gray-700 pt-8 md:text-center">
                 <p>
-                    © 2025 PageTitle. Hak Cipta Terpelihara.
+                    © 2025 FIS Mortgage Ease. Hak Cipta Terpelihara.
                 </p>
             </div>
         </div>
     </footer>
+
     <!-- PWAs function -->
     <script>
         if ('serviceWorker' in navigator) {

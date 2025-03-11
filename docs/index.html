@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-
     <link rel="icon" type="image/png" href="assests/favicon.png">
     <title>FIS Mortgage Ease</title>
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
     <!-- https://wa.me/60189048651?text=Hi,%20saya%20berminat%20dengan%20servis%20FIS%20Mortgage%20Ease. -->
     <!-- PWAs function -->
-    <link rel="manifest" href="../manifest.json">
+    <link rel="manifest" href="manifest.json">
     <script>
         // if ('serviceWorker' in navigator) {
         //     window.addEventListener('load', () => {
@@ -24,7 +23,7 @@
         //     });
         // }
         if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('../service-worker.js')
+            navigator.serviceWorker.register('service-worker.js')
             .then(reg => console.log("Service Worker registered:", reg))
             .catch(err => console.log("Service Worker registration failed:", err));
         }

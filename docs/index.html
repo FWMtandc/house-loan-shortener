@@ -1,13 +1,34 @@
 <!doctype html>
-<html class="scroll-smooth">
+<html class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./output.css" rel="stylesheet">
-    <link rel="manifest" href="/manifest.json">
+
     <link rel="icon" type="image/png" href="assests/favicon.png">
     <title>FIS Mortgage Ease</title>
     <!-- <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
+    <!-- https://wa.me/60189048651?text=Hi,%20saya%20berminat%20dengan%20servis%20FIS%20Mortgage%20Ease. -->
+    <!-- PWAs function -->
+    <link rel="manifest" href="../manifest.json">
+    <script>
+        // if ('serviceWorker' in navigator) {
+        //     window.addEventListener('load', () => {
+        //         navigator.serviceWorker.register('/service-worker.js')
+        //         .then(registration => {
+        //             console.log('ServiceWorker registered with scope:', registration.scope);
+        //         })
+        //         .catch(error => {
+        //             console.error('ServiceWorker registration failed:', error);
+        //         });
+        //     });
+        // }
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('../service-worker.js')
+            .then(reg => console.log("Service Worker registered:", reg))
+            .catch(err => console.log("Service Worker registration failed:", err));
+        }
+    </script>
 </head>
 <body class="bg-gray-100">
     <nav class="bg-gray-100 shadow-sm">
@@ -62,7 +83,7 @@
                     </div>
                     <!-- nav button -->
                     <div class="flex items-center">
-                        <a href="https://wa.me/60189048651" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg  shadow-sm text-white bg-primary hover:bg-black cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                        <a href="https://wa.me/60189048651?text=Hi,%20saya%20berminat%20dengan%20servis%20FIS%20Mortgage%20Ease." class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg  shadow-sm text-white bg-primary hover:bg-black cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
                             Hubungi Kami
                         </a>
                         <!-- <button type="button" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-lg  shadow-sm text-white bg-primary hover:bg-black cursor-pointer focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
@@ -109,7 +130,7 @@
                 </a> -->
             </div>
             <div class="pt-4 pb-3 border-t border-gray-200 p-4">
-                <a href="https://wa.me/60189048651" class="block px-4 py-2 text-center text-sm font-medium text-white bg-primary rounded-md hover:bg-black focus:ring-2 focus:ring-offset-2 focus:ring-primary mx-4">
+                <a href="https://wa.me/60189048651?text=Hi,%20saya%20berminat%20dengan%20servis%20FIS%20Mortgage%20Ease." class="block px-4 py-2 text-center text-sm font-medium text-white bg-primary rounded-md hover:bg-black focus:ring-2 focus:ring-offset-2 focus:ring-primary mx-4">
                     Hubungi Kami
                 </a>
             </div>
@@ -148,7 +169,7 @@
                     </p> -->
                     <!-- button -->
                     <div class="flex sm:justify-center lg:justify-start mt-8 rounded-lg mb-4">
-                        <a href="https://wa.me/60189048651" class=" flex items-center justify-center py-3 px-8 text-lg border font-medium text-white bg-primary hover:bg-black cursor-pointer rounded-lg  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                        <a href="https://wa.me/60189048651?text=Hi,%20saya%20berminat%20dengan%20servis%20FIS%20Mortgage%20Ease." class=" flex items-center justify-center py-3 px-8 text-lg border font-medium text-white bg-primary hover:bg-black cursor-pointer rounded-lg  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
                             Hubungi Kami
                         </a>
                         <!-- <button type="button" class=" flex items-center justify-center py-3 px-8 text-lg border font-medium text-white bg-primary hover:bg-black cursor-pointer rounded-lg  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
@@ -167,7 +188,8 @@
         </div> -->
         <!-- hero img option 2 -->
         <div class="lg:absolute lg:inset-y-1 lg:right-6 lg:w-2/3">
-            <img class="h-55 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl lg:rounded-2xl " src="assests/img/hero-img-rev2.png" alt="" />
+            <!-- <img class="h-55 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl lg:rounded-2xl " src="assests/img/hero-img-rev2.png" alt="" /> -->
+            <img class="h-55 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl lg:rounded-2xl " src="assests/img/testimoniv2.png" alt="" />
             <!-- House with money stack -->
         </div>
     </div>
@@ -242,7 +264,6 @@
                     </div>
                 </div>
                 <!-- 1st point -->
-
                 <div class="flex justify-start lg:justify-center">
                     <div class="mr-4">
                         <div class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white">
@@ -263,6 +284,7 @@
                         </p>
                     </div>
                 </div>
+                
             </div>
         </div>
     </div>
@@ -281,9 +303,13 @@
             <!-- img & list -->
             <div class="max-w-7xl mx-auto  flex flex-col md:flex-row sm:justify-between">
                 <!-- img -->
-                <div class="md:w-1/2 pr-0 md:pr-8 ">
+                <div class="pr-0 md:pr-8 ">
                     <!-- md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 -->
-                    <img src="assests/img/kelebihan-fis-img.jpg" alt="fisadvantageimage" class="object-cover w-full h-56 sm:h-72  md:h-full rounded-lg shadow-lg">
+                    <!-- <img src="assests/img/solution.jpg" alt="fisadvantageimage" class="object-cover w-full h-56 sm:h-72  md:h-full rounded-lg shadow-lg"> -->
+                    <img src="assests/img/solution.jpg" alt="fisadvantageimage" class="rounded-2xl shadow-lg">
+                    <!-- <img src="assests/img/" alt="fisadvantageimage" class=""> -->
+                    <!-- <img src="assests/img/kelebihan-fis-img.jpg" alt="fisadvantageimage" class=""> -->
+
                 </div>
                 <!-- list -->
                 <div class="md:w-1/2 mt-8 md:mt-0">
@@ -319,7 +345,7 @@
                             <svg class="h-6 w-6 text-primary mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                             </svg>
-                            Tidak perlu bayar berganda
+                            Tidak perlu bayar Double atau Triple
                         </li>
                         <li class="flex items-start">
                             <svg class="h-6 w-6 text-primary mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -334,7 +360,7 @@
                         </p>
                         <p class="text-center">
                             <!-- Memendekkan tempoh dan Mengurangkan interest bank ke atas jumlah amount Financing mortgage anda sehingga 75%. -->
-                            Sistem FIS membantu menghabiskan bayaran loan rumah anda dengan lebih cepat.
+                            Sistem FIS membantu menghabiskan bayaran loan rumah anda dengan lebih cepat.
                         </p>
                     </div>
                 </div>
@@ -356,7 +382,7 @@
                 </p> -->
             </div>
             <div class="mx-8 lg:mx-16">
-                <div class="grid grid-cols-3 md:grid-cols-6 gap-y-4 lg:gap mb-2 md:mb-6">
+                <div class="grid grid-cols-3 md:grid-cols-8 gap-y-4 lg:gap mb-2 md:mb-6">
                         <div class="flex items-center justify-center ">
                             <img src="assests/img/banks/uob-logo.png" alt="UOB" class="rounded-lg shadow-lg h-[64px] w-[64px]">
                         </div>
@@ -366,6 +392,11 @@
                     <div class="flex items-center justify-center">
                         <img src="assests/img/banks/alliance-logo.png" alt="Alliance" class="rounded-lg shadow-lg h-[64px] w-[64px]">
                     </div>
+
+                    <div class="flex items-center justify-center">
+                        <img src="assests/img/banks/citybank-logo.png" alt="Alliance" class="rounded-lg shadow-lg h-[64px] w-[64px]">
+                    </div>
+
                     <div class="flex items-center justify-center">
                         <img src="assests/img/banks/cimb-logo.png" alt="CIMB" class="shadow-lg rounded-lg h-[64px] w-[64px]">
                     </div>
@@ -375,6 +406,9 @@
                     <div class="flex items-center justify-center">
                         <img src="assests/img/banks/ocbc-logo.png" alt="OCBC" class="shadow-lg rounded-lg h-[64px] w-[64px]">
                     </div>
+                    <div class="flex items-center justify-center">
+                        <img src="assests/img/banks/hsbc-logo.png" alt="HSBC" class="shadow-lg rounded-lg h-[64px] w-[64px]">
+                    </div>
                 </div>
                 <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6">
                     <div class="flex items-center justify-center mt-2 lg:mt-0">
@@ -383,8 +417,8 @@
                     <div class="flex items-center justify-center mt-2" >
                         <img src="assests/img/banks/hong-leong-bank-logo.png" alt="Hong Leong Bank" class="rounded-lg shadow-md  transition duration-300 h-[64px] w-32 object-cover">
                     </div>
-                    <div class="flex items-center justify-center mt-2"">
-                        <img src="assests/img/banks/hsbc-logo.png" alt="HSBC" class="rounded-lg shadow-md transition duration-300 h-[64px] w-32 object-cover">
+                    <div class="flex items-center justify-center mt-2">
+                        <img src="assests/img/banks/affin-bank.png" alt="Affin" class="rounded-lg shadow-md transition duration-300 h-[64px] w-32 object-cover">
                     </div>
                     <div class="flex items-center justify-center mt-2"">
                         <img src="assests/img/banks/public-bank.png" alt="Public Bank" class="rounded-lg shadow-md  transition duration-300 h-[64px] w-32 object-cover">
@@ -420,9 +454,11 @@
                         <p class="text-xl text-gray-600 mb-6">Adivisor, FIS (TasMRPC)</p>
                         <!-- Bio -->
                         <div class="mb-6">
+                            <p class="mb-2">Perancang Kewangan Profesional di Malaysia</p>
                             <p class="text-gray-700 leading-relaxed">
                                 <!-- Muhammad Faris Bin Shamsul Bahri, TasMRPC Director, is an experienced financial consultant in mortgage consulting and Islamic finance. A Licensed Financial Planner and PhD Candidate in Islamic Finance at UTM, he has helped numerous clients make well-informed decisions in home financing through tailored solutions that fulfill both financial goals and moral values. With a strong academic background from IIUM and Yarmouk University, he is dedicated to providing personalized financial services that help individuals and families attain safe homeownership. -->
-                                Muhammad Faris Bin Shamsul Bahri, Pengarah TasMRPC, adalah perunding kewangan berpengalaman dalam perundingan gadai janji dan kewangan Islam. Seorang Perancang Kewangan Berlesen dan Calon PhD dalam Kewangan Islam di UTM, beliau telah membantu ramai pelanggan membuat keputusan termaklum dalam pembiayaan rumah melalui penyelesaian yang disesuaikan yang memenuhi kedua-dua matlamat kewangan dan nilai moral. Dengan latar belakang akademik yang kukuh dari UIAM dan Universiti Yarmouk, beliau berdedikasi untuk menyediakan perkhidmatan kewangan peribadi yang membantu individu dan keluarga mencapai pemilikan rumah yang selamat.
+                                <!-- Muhammad Faris Bin Shamsul Bahri, Pengarah TasMRPC, adalah perunding kewangan berpengalaman dalam perundingan gadai janji dan kewangan Islam. Seorang Perancang Kewangan Berlesen dan Calon PhD dalam Kewangan Islam di UTM, beliau telah membantu ramai pelanggan membuat keputusan termaklum dalam pembiayaan rumah melalui penyelesaian yang disesuaikan yang memenuhi kedua-dua matlamat kewangan dan nilai moral. Dengan latar belakang akademik yang kukuh dari UIAM dan Universiti Yarmouk, beliau berdedikasi untuk menyediakan perkhidmatan kewangan peribadi yang membantu individu dan keluarga mencapai pemilikan rumah yang selamat. -->
+                                Dengan pengalaman 5 tahun, saya berdedikasi membantu klien mencapai matlamat kewangan melalui strategi pelaburan dan pengurusan kekayaan yang disesuaikan. Saya menyediakan nasihat dalam perancangan persaraan, perlindungan insurans, dan pengurusan hutang termasuk <b>FIS untuk pinjaman rumah</b>, yang membantu klien memendekkan tempoh bayaran tanpa perlu membayar dua atau tiga kali ganda setiap bulan. Setiap pelan kewangan diselaraskan dengan aspirasi peribadi klien. Komitmen saya terhadap pendidikan kewangan memberdayakan klien untuk membuat keputusan yang bijak. Reputasi saya sebagai perancang kewangan yang dipercayai dibina atas integriti dan kejayaan dalam membantu klien mencapai kestabilan kewangan.
                             </p>
                         </div>
                         <!-- Certifications -->
@@ -524,12 +560,12 @@
             </h2>
             <div class="flex sm:justify-start lg:justify-start  lg:flex-shrink-0 mt-8 rounded-lg mb-3">
                 <div>
-                    <a href="https://wa.me/60189048651" class=" flex items-center justify-center py-3 px-8 text-lg border font-medium text-white bg-primary hover:bg-black cursor-pointer rounded-lg  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+                    <a href="https://wa.me/60189048651?text=Hi,%20saya%20berminat%20dengan%20servis%20FIS%20Mortgage%20Ease." class=" flex items-center justify-center py-3 px-8 text-lg border font-medium text-white bg-primary hover:bg-black cursor-pointer rounded-lg  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
                         Hubungi Kami
                     </a>
                 </div>
                 <!-- <div class="ml-3 inline-flex rounded-md shadow">
-                    <a href="https://wa.me/60189048651" class="inline-flex items-center justify-center py-3 px-8 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-white">
+                    <a href="https://wa.me/60189048651?text=Hi,%20saya%20berminat%20dengan%20servis%20FIS%20Mortgage%20Ease." class="inline-flex items-center justify-center py-3 px-8 border border-transparent text-base font-medium rounded-md text-white bg-black hover:bg-white">
                         Hubungi Kami
                     </a>
                 </div> -->
@@ -582,7 +618,7 @@
                             </h3>
                             <ul class="mt-4 space-y-4"">
                                 <li>
-                                    <a href="https://wa.me/60189048651" class="text-base text-gray-400 hover:text-white">
+                                    <a href="https://wa.me/60189048651?text=Hi,%20saya%20berminat%20dengan%20servis%20FIS%20Mortgage%20Ease." class="text-base text-gray-400 hover:text-white">
                                         018-9048651
                                     </a>
                                 </li>
@@ -603,20 +639,5 @@
             </div>
         </div>
     </footer>
-
-    <!-- PWAs function -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/service-worker.js')
-                .then(registration => {
-                    console.log('ServiceWorker registered with scope:', registration.scope);
-                })
-                .catch(error => {
-                    console.error('ServiceWorker registration failed:', error);
-                });
-            });
-        }
-    </script>
 </body>
 </html>

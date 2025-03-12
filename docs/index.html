@@ -18,13 +18,8 @@
             .then(reg => console.log("Service Worker registered:", reg))
             .catch(err => console.error("Service Worker registration failed:", err));
         }
-    </script>
-</head>
-<body class="bg-gray-100">
-    <nav class="bg-gray-100 shadow-sm">
-        <!-- nav responsive function -->
-        <script>
-            document.addEventListener('DOMContentLoaded', function() {
+        // nav responsive function
+        document.addEventListener('DOMContentLoaded', function() {
                 const mobileMenuButton = document.querySelector('[aria-controls="mobile-menu"]');
                 const mobileMenu = document.getElementById('mobile-menu');
                 
@@ -36,7 +31,10 @@
                     });
                 }
             });
-        </script>
+    </script>
+</head>
+<body class="bg-gray-100 font-ubuntu">
+    <nav class="bg-gray-100 shadow-sm fixed w-full z-30 top-0">
         <!-- desktop nav -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6">
             <div class="flex justify-between h-16">
@@ -128,9 +126,9 @@
     </nav>
 
     <!-- hero container -->
-    <div id="hero" class="bg-gray-100 relative max-w-7xl mx-auto px-4 sm:px-6">
+    <div id="hero" class="bg-gray-100 relative max-w-7xl mx-auto px-4 sm:px-6 mt-20">
         <div class="bg-gray-100">
-            <div class=" bg-gradient-to-r from-gray-100 from-82% to-transparent relative z-10 lg:max-w-2xl">
+            <div class="bg-gradient-to-r from-gray-100 from-82% to-transparent relative lg:max-w-2xl z-20">
                 <div class="mt-4 sm:text-center lg:text-left">  <!--spaces between this 2 container-->
                     <div class="flex items-center mr-8">
                         <div class="bg-primary p-1  px-4 rounded-r-full mt-6">
@@ -177,10 +175,15 @@
             <img src="https://placehold.co/600x600" alt="hero image" class="object-cover w-full h-56 sm:h-72 md:h-96 lg:h-full rounded-lg shadow-lg">
         </div> -->
         <!-- hero img option 2 -->
-        <div class="lg:absolute lg:inset-y-1 lg:right-6 lg:w-2/3">
-            <!-- <img class="h-55 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl lg:rounded-2xl " src="assets/img/hero-img-rev2.png" alt="" /> -->
-            <img class="h-55 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl lg:rounded-2xl " src="assets/img/testimoniv2.png" alt="" />
-            <!-- House with money stack -->
+        <div class="hidden lg:block lg:absolute lg:inset-y-1 lg:right-6 lg:w-2/3">
+            <img class="h-55 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl lg:rounded-2xl" 
+                src="assets/img/testimoniv2.png" 
+                alt="" />
+        </div>
+        <div class="block lg:hidden lg:absolute lg:inset-y-1 lg:right-6 lg:w-2/3">
+            <img class="h-55 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl lg:rounded-2xl" 
+                src="assets/img/testimoniv4.png" 
+                alt="" />
         </div>
     </div>
 
@@ -227,7 +230,8 @@
                             BAKI STATIK
                         </p>
                         <p class="text-base text-gray-500">
-                            Faktor yang menyebabkan baki loan anda tidak bergerak walaupun sudah bertahun bayar installment.
+                            <!-- Faktor yang menyebabkan baki loan anda tidak bergerak walaupun sudah bertahun bayar installment. -->
+                            Sebab baki loan tidak bergerak walaupun sudah bertahun bayar installment.
                         </p>
                     </div>
                 </div>
@@ -372,7 +376,8 @@
                 </p> -->
             </div>
             <div class="mx-8 lg:mx-16">
-                <div class="grid grid-cols-3 md:grid-cols-8 gap-y-4 lg:gap mb-2 md:mb-6">
+                <!-- <div class="grid grid-cols-3 md:grid-cols-8 gap-y-4 lg:gap mb-2 md:mb-6"> -->
+                <div class="grid grid-cols-4 lg:grid-cols-8 gap-y-4 lg:gap mb-2 md:mb-6">
                         <div class="flex items-center justify-center ">
                             <img src="assets/img/banks/uob-logo.png" alt="UOB" class="rounded-lg shadow-lg h-[64px] w-[64px]">
                         </div>
@@ -566,7 +571,7 @@
         </div>
     </div>
 
-    <footer class="bg-neutral-800">
+    <footer class="bg-gray-900">
         <!-- px-4 sm:px-6 -->
         <div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 lg:py-16">
             <div class="xl:grid xl:grid-cols-3 xl:gap-8">  
